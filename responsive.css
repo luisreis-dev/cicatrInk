@@ -1,0 +1,133 @@
+/* HEADER */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 6%;
+  }
+
+  .navbar.scrolled {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .navbar-logo {
+    font-size: 1.8rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 12px 6% 24px;
+    background-color: var(--color-black);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar-links a {
+    width: 100%;
+    padding: 16px 0;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .navbar-links a::after {
+    bottom: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+}
+
+/* SESSÃO HERO */
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 20px 6%;
+  }
+
+  .navbar.scrolled {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .navbar-logo {
+    font-size: 1.8rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    width: 100%;
+    padding: 12px 6% 24px;
+    box-sizing: border-box;
+    background-color: var(--color-black);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar-links a {
+    width: 100%;
+    padding: 16px 0;
+    box-sizing: border-box;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .navbar-links a::after {
+    bottom: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
